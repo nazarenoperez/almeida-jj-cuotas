@@ -121,7 +121,7 @@ export default function Alumnos() {
           </button>
         </div>
 
-        <div className="grid grid-cols-[2fr_1fr_1fr] gap-3 mb-4 items-center">
+        <div className="grid grid-cols-[3fr_1fr_1fr] gap-3 mb-4 items-center">
           <input
             type="text"
             placeholder="Buscar por nombre..."

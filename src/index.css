@@ -1,9 +1,3 @@
 @import "tailwindcss";
 
 @variant dark (&:where(.dark, .dark *));
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
