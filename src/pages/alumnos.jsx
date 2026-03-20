@@ -98,8 +98,8 @@ export default function Alumnos() {
     return ordenFaixas.indexOf(a.faixa) - ordenFaixas.indexOf(b.faixa)
   })
 
-  const inputClass = "mt-1 w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-600 bg-white dark:bg-black text-gray-900 dark:text-white"
-  const selectClass = "border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-2 text-sm bg-white dark:bg-black text-gray-900 dark:text-white"
+  const inputClass = "h-10 w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-600 bg-white dark:bg-black text-gray-900 dark:text-white"
+  const selectClass = "h-10 w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 text-sm bg-white dark:bg-black text-gray-900 dark:text-white"
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-black">
