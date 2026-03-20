@@ -134,7 +134,7 @@ export default function Alumnos() {
             value={filtroFaixa}
             onChange={e => setFiltroFaixa(e.target.value)}
           >
-            <option value="">Todas las faixas</option>
+            <option value="">Faixa</option>
             {faixasDisponibles.map(f => <option key={f}>{f}</option>)}
           </select>
           <select
