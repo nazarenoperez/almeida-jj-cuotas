@@ -121,27 +121,19 @@ export default function Alumnos() {
           </button>
         </div>
 
-        <div className="grid grid-cols-3 gap-3 mb-4 items-center">
+        <div className="flex gap-3 mb-4 items-stretch">
           <input
             type="text"
             placeholder="Buscar por nombre..."
-            className="h-10 w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-600 bg-white dark:bg-black text-gray-900 dark:text-white"
+            className={`w-full ${inputClass}`}
             value={busqueda}
             onChange={e => setBusqueda(e.target.value)}
           />
-          <select
-            className="h-10 w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 text-sm bg-white dark:bg-black text-gray-900 dark:text-white"
-            value={filtroFaixa}
-            onChange={e => setFiltroFaixa(e.target.value)}
-          >
+          <select className={selectClass} value={filtroFaixa} onChange={e => setFiltroFaixa(e.target.value)}>
             <option value="">Todas las faixas</option>
             {faixasDisponibles.map(f => <option key={f}>{f}</option>)}
           </select>
-          <select
-            className="h-10 w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 text-sm bg-white dark:bg-black text-gray-900 dark:text-white"
-            value={filtroCategoria}
-            onChange={e => { setFiltroCategoria(e.target.value); setFiltroFaixa('') }}
-          >
+          <select className={selectClass} value={filtroCategoria} onChange={e => { setFiltroCategoria(e.target.value); setFiltroFaixa('') }}>
             <option value="">Todos</option>
             <option value="Adulto">Adulto</option>
             <option value="Infantil">Infantil</option>
